@@ -113,9 +113,6 @@ interp_resamp <- raster(nrows = nrow(prod_lyr) * 10,
 projection(interp_resamp) <- projection(prod_lyr)
 interp_resamp <- resample(interp_rot, interp_resamp, method = "ngb", 
                           filename = "npp/intermediate/interp_resamp.grd")
-interp_agg <- aggregate(interp_resamp, fact=10, fun=max, na.rm=TRUE,
-                          filename = "npp/intermediate/interp_agg.grd")
+interp_final <- aggregate(interp_resamp, fact=10, fun=max, na.rm=TRUE,
+                          filename = "npp/intermediate/interp_final.grd")
 
-# Remove shallow cells from interpolation layer
-interp_final <- interp_agg & (depth30_final == 0)  
-writeRaster(interp_final, "npp/masks/interp_final.grd")
