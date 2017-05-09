@@ -17,8 +17,8 @@ of the corresponding subfolder.
 
 These data products were published in the following study:
 
-* Yeager, L.A., Marchand, P., Gill, D.A., Baum, J.K., and McPherson, J.M. In review. 
-Queryable global layers of environmental and anthropogenic variables for marine ecosystem studies. 
+* Yeager, L.A., Marchand, P., Gill, D.A., Baum, J.K., and McPherson, J.M. (2017) 
+Queryable global layers of environmental and anthropogenic variables for marine ecosystem studies. *Ecology*. In Press. doi: 10.1002/ecy.1884.
 
 Please cite this article for any work that re-uses this code.
 
